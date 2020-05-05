@@ -1,0 +1,24 @@
+h1 {
+    background-image: linear-gradient(to right, orange,pink);
+    size : 20px;
+    font-family : 'Courier New';
+    padding-left : 48%;
+    color: darkblue;
+}
+body {
+    background-color: black;
+    
+}
+form {
+    padding-left: 49%;
+    color : orange;
+}
+h2 {
+    color: bisque;
+}
+bigbox {
+    border:2px solid pink;
+    background-color: red;
+    border-radius: 5px;
+    padding-left: 50%;
+}

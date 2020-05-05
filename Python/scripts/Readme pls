@@ -1,0 +1,7 @@
+the only dependencies that you need to run this is pynput 
+to install those dependencies 
+Open your terminal and run the following commands:
+
+pip3 install pynput
+
+pip install pynput
