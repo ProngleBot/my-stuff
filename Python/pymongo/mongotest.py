@@ -1,6 +1,6 @@
 import pymongo
 from pymongo import MongoClient
-cluster = MongoClient('mongodb+srv://bigpapaasg:shinchan11@cluster0-0hiha.mongodb.net/test?retryWrites=true&w=majority')
+cluster = MongoClient('mongodb+srv://bigpapaasg:ohyeah?@cluster0-0hiha.mongodb.net/test?retryWrites=true&w=majority')
 db = cluster["test"]
 collection = db["test"]
 post = {
