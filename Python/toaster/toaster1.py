@@ -21,15 +21,15 @@ def gifter():
         ui()
     else:
         x = float(p)
-        x = int(x/50)
+        x = int(x/300)
         if x <= 1:
-            print(f'{x}rose is about to be gifted')
+            print(f'{x}Sushi is about to be gifted')
         else:
-            print(f'{x}roses are about to be gifted')
+            print(f'{x}Sushi are about to be gifted')
         def typer():
             time.sleep(2)
             pyautogui.hotkey('ctrl','a','delete')
-            pyautogui.write('.gift rose emotionaltoast',interval=0.06)
+            pyautogui.write('.gift sushi emotionaltoast',interval=0.06)
             pyautogui.press('enter')
             counter()
         def counter():
