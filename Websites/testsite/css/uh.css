@@ -1,0 +1,43 @@
+.text{
+    background-color:#5c5c5c;
+    position: relative;
+    font-family: 'Segoe UI Regular WestEuropean', 'Segoe UI';
+    padding : 15px;
+    
+}
+
+body{
+    background-color:black;
+}
+a{
+    background: darkred;
+    color:white;
+    font-size:25px;
+    text-decoration:none;
+}
+.title {
+    padding: 10px;
+    background-size: cover;
+    float:center;
+    text-align-last: center;
+    background-color: darkred;
+    color: white;
+    font-size:25px;
+    text-decoration:none;
+    font-family: Blippo, fantasy;
+    opacity: 0.5;
+}
+
+
+.text:hover{
+    background-color:red;
+}
+.clicked{
+    overflow:hidden;
+    text-decoration:none;
+    padding:15px;
+    
+}
+img {
+    border-radius: 50px;
+}
