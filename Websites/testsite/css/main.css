@@ -1,0 +1,19 @@
+body {
+    background-color: #087868;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size : 14px;
+    color:#FFFFFF;
+    padding: 30px;
+    text-align: center;
+}
+#response{
+    color:white;
+    font-size:70px
+}
+.button{
+    background-color:blue;
+    padding:10px;
+    border-color:blue;
+    color:white;
+    border-radius:3px;
+}
