@@ -1,25 +1,143 @@
-html{
-    padding: 0px;
-}
+
 body{
-    background-color:black;
-    padding:0px;
-    margin:0;
+    background-image: url("../images/800252.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 h1{
-    color:black;
-    font-family: sans-serif;
-    padding-right:16px;
+    width:100%;
+    padding:3%;
     margin:0;
-    text-align-last: center;
+    color:white;
+    animation: transitionIn 0.5s;
 }
-.centerer{
+
+.form-group{
+    background-color:#1c1c1c;
     text-align:center;
+    padding:20px;
+    border-top-left-radius:.3rem;
+    border-top-right-radius:.3rem;
 }
-.bcolor{
-    background-color: white;
-    padding : 20px;
+
+.header{
+    background-color:black;
+    
 }
-img {
-    align-self: center;
+.jumbotron{
+    background-color:#1c1c1c;
+    text-align:center;
+    color:white;
+    padding-top:0;
+    border-top-left-radius:0;
+    border-top-left-radius:0    ;
+}
+hr{
+    border-top: 1px solid rgba(255,255,255,.8);
+}
+label{
+    color:white;
+    padding-bottom:10px
+}
+input{
+    padding:0.5%;
+}
+.nav-item{
+    background-color: black;
+    text-align:center;
+    color:white;
+    padding: 0.05%;
+}
+.nav-item:hover{
+    animation: transitionIn 0.5s;
+    background-color:#dbe4ebAA;
+}
+ul{
+    background-color:#0c0c0c;
+}
+
+.img-responsive {
+    
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding:3%;
+}
+.img-responsive-pfp {
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 4px solid #dbe4ebAA ;
+    border-radius: 25px;
+}
+.img-responsive-pfp:hover {
+    transform: scale(1.15);
+}  
+
+.img-responsive:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.active{
+    background-color:grey;
+}
+.lead{
+    animation: transitionIn 1s;
+    padding:3%;
+    margin:0;
+}
+p{
+    animation: transitionIn 0.5s;
+    margin:0;
+}
+.card{
+    background-color:#301934;
+    border: 4px solid #dbe4ebAA;
+    border-radius: 18px;
+}
+.nactive{
+    background-color:#FFFFFFAF;
+}
+
+hr{
+    margin: 18px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.social-item{
+    border-radius: 20px;
+}
+.social-item:hover{
+    border-radius:18px;
+}
+#instagram{
+    margin:1%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color:white;
 }
