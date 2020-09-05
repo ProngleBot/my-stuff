@@ -186,7 +186,7 @@
     $("#welcomeData").hide();
     $("#projectData").hide();
   })
-  $("#nekoChanger").click(() => {
+  $("#nekoChanger").click(() => {  
     $.getJSON("https://nekos.life/api/v2/img/meow",function(data){
       $("#nekoEasterEgg").attr("src",data.url);
     })
