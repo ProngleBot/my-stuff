@@ -6,7 +6,6 @@
     <title>John Doe's Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="https://unpkg.com/vue"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
@@ -82,7 +81,7 @@
           <h6 class="card-text"> This is Oasis, a discord bot made in python. <br> <a href = "https://discord.gg/38SyGG">Check him out here</a></h6>
         </div>
       </div>
-      </div>
+    </div>
     <div class="col-sm-6">
       <div class="card text-center" style="width: 18rem;  display: inline-block;">
         <div class="card-body">
@@ -120,8 +119,18 @@
     <h1 style="padding-bottom:0%;">Hello, world!</h1>
     <sub style="padding:0%;">This is my blog area this is where  i'll  post  what i'll be and am working on </sub>
     <hr>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="display: inline-block;">
+			<h5 class="card-body" id="theBlogTitle"> Coming Soon!  </h5>
+			<h6 class="card-title" id="theBlogData"> WOOO </h6>	
+		</div>
+	</div>
+        </div>
+	  </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script src="https://unpkg.com/vue"></script>
  <script>
    window.onload= function() {  
     Particles.init({
@@ -131,6 +140,7 @@
     sizeVariations:3,
   });
 };
+
   $("#projectData").hide();
   $("#contactData").hide();
   $("#blogData").hide();
@@ -181,7 +191,20 @@
       $("#nekoEasterEgg").attr("src",data.url);
     })
   })
-  
+  $("#nav-blog").click(()=>{
+
+	$.ajax({
+    type: 'GET',
+    url: 'https://www.googleapis.com/blogger/v3/blogs/1431235842095242603/posts?key=AIzaSyA92o6-GXqMX4XuYtfvozuEq8hxVbWaxXM',
+    success : function(data) { 
+		var title  = data.items[0].title.replace(/<\/?[^>]+(>|$)/ig, "");
+		var content  = data.items[0].content.replace(/<\/?[^>]+(>|$)/ig, "");
+		$("#theBlogTitle").text(title);
+		$("#theBlogData").text(content);
+
+	},
+});
+	});
   </script>
 </body>
 </html>
